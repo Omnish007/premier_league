@@ -1,0 +1,60 @@
+.leagueStandingWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leagueTableHeading{
+  text-align: center;
+}
+
+table{
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 18px;
+
+  thead{
+    tr{
+      th{
+        user-select: none;
+        padding: 15px;
+        border-bottom: 1px solid lightgray;
+      }
+    }
+  }
+    
+
+  tbody{
+    tr{
+      border-bottom: 1px solid lightgray;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(24, 24, 24);
+        z-index: -1;
+      }
+      &:hover{
+        cursor: pointer;
+        color: white;
+        position: relative;
+        &::after{
+          width: 100%;
+          color: white;
+        }
+      }
+      td{
+        padding: 15px 30px
+      }
+      td:nth-child(2){
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.fixturesListHeading{
+  text-align: center;
+}
+.mainWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .teamsWrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .singleTeamWrapper{
+      display: flex;
+      align-items: center;
+      flex:6;
+      img{
+        height: 50px;
+        width: 50px;
+        flex: 0;
+        object-fit: contain;
+      }
+      p{
+        flex: 1;
+        text-align: right;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &:first-child{
+        p{
+          text-align: right;
+          margin-right: 20px;
+        }
+    }
+    &:last-child{
+      p{
+        text-align: left;
+        margin-left: 20px;
+
+      }
+    }
+  }
+}
+.versuswrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  h3{
+    font-size: 20px;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 0 10px;
+  }
+}
+}
+
+.pastMatchesMainWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .winnerTeam{
+    background-color: rgba(9, 65, 9, 0.974);
+    color:white;
+    border-radius: 10px;
+  }
+
+  .teamsWrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .singleTeamWrapper{
+      display: flex;
+      align-items: center;
+      flex:6;
+      // img{
+      //   height: 50px;
+      //   flex: 0;
+      //   object-fit: contain;
+      // }
+      .pastMatchTeamName{
+        flex:6;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .pastMatchTeamScore{
+        flex:1;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .pastMatchTeamLogo{
+        height: 50px;
+        width: 50px;
+        flex: 2;
+        object-fit: contain;
+      }
+
+      &:first-child{
+        .pastMatchTeamScore{
+            margin-left: 20px;
+        }
+        .pastMatchTeamName{
+          text-align: right;
+        }
+      }
+
+      &:last-child{
+        .pastMatchTeamScore{
+            margin-right: 20px;
+            text-align: right;
+        }
+        .pastMatchTeamName{
+          text-align: left;
+          margin-right: 20px;
+        }
+      }
+  }
+}
+.versuswrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  h3{
+    font-size: 20px;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 0 10px;
+  }
+}
+}
+
+.homeBtn {
+  text-decoration: underline;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
